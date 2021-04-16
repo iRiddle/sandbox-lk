@@ -3,7 +3,7 @@
     src: url('fonts/Ubuntu-Bold.woff') format('woff'),
         url('fonts/Ubuntu-Bold.ttf') format('truetype'),
         url('fonts/Ubuntu-Bold.svg#Ubuntu-Bold') format('svg');
-    font-weight: bold;
+    font-weight: 700;
     font-style: normal;
     font-display: swap;
 }
@@ -24,6 +24,26 @@
         url('fonts/Roboto-Medium.ttf') format('truetype'),
         url('fonts/Roboto-Medium.svg#Roboto-Medium') format('svg');
     font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Light.woff') format('woff'),
+        url('fonts/Roboto-Light.ttf') format('truetype'),
+        url('fonts/Roboto-Light.svg#Roboto-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('fonts/Ubuntu-Light.woff') format('woff'),
+        url('fonts/Ubuntu-Light.ttf') format('truetype'),
+        url('fonts/Ubuntu-Light.svg#Ubuntu-Light') format('svg');
+    font-weight: 300;
     font-style: normal;
     font-display: swap;
 }

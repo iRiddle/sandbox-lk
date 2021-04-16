@@ -1,0 +1,51 @@
+@import '../../sass/variables'
+
+.button
+    background: transparent
+    border: none
+    color: $text-color-main
+    cursor: pointer
+    &--text-underlined--header
+        padding: 0
+        text-decoration: underline
+        font-family: Roboto
+        font-style: normal
+        font-weight: 300
+        font-size: 12px
+        line-height: 14px
+        color: $header-description-color
+    &--text-icon-right--header
+        padding: 0
+        font-family: Roboto
+        font-style: normal
+        font-weight: 300
+        font-size: 12px
+        line-height: 14px
+        color: $header-description-color
+        padding-right: 20px
+        position: relative
+        &::after
+            content: ''
+            height: 15px
+            width: 100%
+            position: absolute
+            bottom: 0
+            right: 0
+            background-position: 100% 50%
+            background-repeat: no-repeat
+        &--icon
+            &-profile
+                &::after
+                    background-image: url('/img/icons/profile.svg')
+            &-basket
+                &::after
+                    background-image: url('/img/icons/basket.svg')
+    &--tab-header
+        font-family: Ubuntu
+        font-style: normal
+        font-weight: 500
+        font-size: 14px
+        line-height: 16px
+        letter-spacing: -0.02em
+        text-transform: uppercase
+        color: $text-color-main

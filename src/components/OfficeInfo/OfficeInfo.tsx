@@ -1,4 +1,5 @@
 import React from 'react';
+import './OfficeInfo.sass'
 import Button from '../Button';
 
 const OfficeInfo = () => (

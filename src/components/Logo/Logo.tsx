@@ -1,11 +1,12 @@
 import React from 'react';
-import {ILogoProps } from '../../intefaces'
+import './Logo.sass';
 import logoImg from './logo-in-header.png';
 
-const Logo = ({description}: ILogoProps) => (
+const Logo = () => (
     <div className="logo">
         <img className="logo__img" src={logoImg} alt="логотип Cerebro"/>
-        <div className="logo__description">{description}</div>
+        <div className="logo__description">Комплексный подход 
+									к ведению онлайн бизнеса</div>
         </div>
 )
 

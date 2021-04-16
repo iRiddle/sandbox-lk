@@ -1,9 +1,17 @@
 import React from 'react';
+import './Button.sass';
+
 import addBEMmodificator from '../../helpers/addBEMmodificator'
 
 import { IButtonProps} from '../../intefaces'
 
-const Button = ({submit = false, variant, children, onClick = ()=>{}} : IButtonProps) => {
+const Button = ({
+    submit = false,
+    variant, 
+    children, 
+    onClick = ()=>{}
+} : IButtonProps) => {
+    
     let baseClass = "button";
     let classes = addBEMmodificator(baseClass, variant);
 
