@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('fonts/Ubuntu-Bold.woff') format('woff'),
+        url('fonts/Ubuntu-Bold.ttf') format('truetype'),
+        url('fonts/Ubuntu-Bold.svg#Ubuntu-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('fonts/Ubuntu-Medium.woff') format('woff'),
+        url('fonts/Ubuntu-Medium.ttf') format('truetype'),
+        url('fonts/Ubuntu-Medium.svg#Ubuntu-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Medium.woff') format('woff'),
+        url('fonts/Roboto-Medium.ttf') format('truetype'),
+        url('fonts/Roboto-Medium.svg#Roboto-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
