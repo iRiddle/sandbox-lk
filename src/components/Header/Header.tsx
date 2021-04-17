@@ -4,7 +4,7 @@ import './Header.sass';
 import Logo from "../Logo";
 import OfficeInfo from "../OfficeInfo";
 import ProfileStatus from '../ProfileStatusBar';
-import WidthContainer from "../../containers/WidthContainer";
+import WidthContainer from "../WidthContainer";
 import SearhInput from "../SearhInput";
 import CityBar from "../CityBar";
 import TabBar from '../TabBar';

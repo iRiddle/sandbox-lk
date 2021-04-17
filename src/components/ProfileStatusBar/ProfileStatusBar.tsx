@@ -4,10 +4,10 @@ import Button from '../Button';
 
 const ProfileStatusBar = () => (
     <div className="profile-status-bar">
-        <Button variant={["--text-icon-right--header", "--text-icon-right--header--icon-profile"]}>
+        <Button modificators={["--text-icon-right--header", "--text-icon-right--header--icon-profile"]}>
             Войти
         </Button>
-        <Button variant={["--text-icon-right--header", "--text-icon-right--header--icon-basket"]}>
+        <Button modificators={["--text-icon-right--header", "--text-icon-right--header--icon-basket"]}>
             Корзина
         </Button>
     </div>

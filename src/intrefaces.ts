@@ -1,7 +1,7 @@
 
 export interface IButtonProps {
     submit?: boolean
-    variant: string | string[]
+    modificators: string | string[]
     children?: string
     onClick?: ()=> void
 }
@@ -17,3 +17,11 @@ export interface ITabs {
 
 export type TabsArrayType = ITabs[]
 
+export interface IMainContainerProps {
+    children : JSX.Element | JSX.Element[] 
+}
+
+export interface IProfileStatusMenuProps {
+    name: string
+    imgUrl?: string
+}

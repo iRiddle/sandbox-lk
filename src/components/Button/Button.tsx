@@ -3,17 +3,17 @@ import './Button.sass';
 
 import addBEMmodificator from '../../helpers/addBEMmodificator'
 
-import { IButtonProps} from '../../intefaces'
+import { IButtonProps} from '../../intrefaces'
 
 const Button = ({
     submit = false,
-    variant, 
+    modificators, 
     children, 
     onClick = ()=>{}
 } : IButtonProps) => {
     
     let baseClass = "button";
-    let classes = addBEMmodificator(baseClass, variant);
+    let classes = addBEMmodificator(baseClass, modificators);
 
     return (
     <button

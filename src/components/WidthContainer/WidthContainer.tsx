@@ -1,7 +1,7 @@
 import React from 'react';
 import './WidthContainer.sass';
 
-import { IWidthCoontainerProps} from '../../intefaces'
+import { IWidthCoontainerProps} from '../../intrefaces'
 
 const WidthContainer = ({children} : IWidthCoontainerProps) => (
     <div className="container">

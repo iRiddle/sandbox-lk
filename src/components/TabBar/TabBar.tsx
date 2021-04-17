@@ -7,8 +7,8 @@ import Button from '../Button';
 const TabBar = () => {
 
     const renderTabs = tabs.map( tab => (
-        <li className="tab-bar__li">
-            <Button variant="--tab-header">
+        <li className="tab-bar__li" key={tab.label}>
+            <Button modificators="--tab-header">
             {tab.label}
             </Button>
             
