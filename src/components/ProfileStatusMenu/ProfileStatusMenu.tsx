@@ -1,6 +1,6 @@
 import React from 'react';
 import './ProfileStatusMenu.sass'
-import {IProfileStatusMenuProps} from './../../intrefaces';
+import {IProfileStatusMenuProps} from '../../interfaces';
 import Button from '../Button';
 
 const ProfileStatusMenu = ({ name, imgUrl}:IProfileStatusMenuProps) => (

@@ -1,7 +1,7 @@
 import React from 'react';
 import WidthContainer from '../WidthContainer';
 import './MainContainer.sass';
-import {IMainContainerProps} from '../../intrefaces';
+import {IMainContainerProps} from '../../interfaces';
 
 const MainContainer = ({children} : IMainContainerProps) => (
     <WidthContainer>

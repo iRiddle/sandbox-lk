@@ -1,4 +1,4 @@
-import { TabsArrayType } from '../intrefaces'
+import { TabsArrayType } from '../interfaces'
 
 export const tabs : TabsArrayType = [
     {

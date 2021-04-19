@@ -3,11 +3,14 @@ import './Button.sass';
 
 import addBEMmodificator from '../../helpers/addBEMmodificator'
 
-import { IButtonProps} from '../../intrefaces'
+import { IButtonProps} from '../../interfaces'
 
 const Button = ({
     submit = false,
-    modificators, 
+    modificators,
+    activeModificator,
+    isActive,
+    counter,
     children, 
     onClick = ()=>{}
 } : IButtonProps) => {
@@ -15,12 +18,16 @@ const Button = ({
     let baseClass = "button";
     let classes = addBEMmodificator(baseClass, modificators);
 
+    if(isActive && activeModificator) classes = classes + addBEMmodificator(baseClass, activeModificator);
+
+    const renderCounter = counter ? ` (${counter})` : null
+
     return (
     <button
         type={ submit ? "submit" : "button"}
         className={classes}
     >
-        {children}
+        {children}{renderCounter}
     </button>
 )
 }

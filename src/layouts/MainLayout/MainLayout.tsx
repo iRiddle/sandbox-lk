@@ -3,12 +3,15 @@ import Header from '../../components/Header';
 import MainContainer from '../../components/MainContainer';
 import ProfileMainMenu from '../../components/ProfileMainMenu';
 
-const MainLayout = () => (
+import {IMainLayoutProps} from '../../interfaces'
+
+const MainLayout = ({children}:IMainLayoutProps) => (
     <>
         <Header/>
         <MainContainer>
             <ProfileMainMenu/>
-            {/* content here, only two children avalible in MainContainer */}
+            {children ? children : null }
+
         </MainContainer>
     </>
 )
