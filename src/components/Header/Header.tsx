@@ -5,17 +5,17 @@ import Logo from "../Logo";
 import OfficeInfo from "../OfficeInfo";
 import ProfileStatus from '../ProfileStatusBar';
 import WidthContainer from "../WidthContainer";
-import SearhInput from "../SearhInput";
+import SearchInput from "../SearchInput";
 import CityBar from "../CityBar";
 import TabBar from '../TabBar';
 
 const InfoBar = () => (
 	<div className="info-bar">
 					<Logo/>
-					<div className="header__wrapper header__wrapper--flex-end header__wrapper--vertical-centered">
+					<div className="info-bar__wrapper info-bar__wrapper--flex-end info-bar__wrapper--vertical-centered">
 						<OfficeInfo/>
 						<ProfileStatus/>
-						<SearhInput/>
+						<SearchInput/>
 					</div>
 			</div>
 )

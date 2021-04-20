@@ -1,7 +1,7 @@
 import React from 'react';
-import './SearhInput.sass';
+import './SearchInput.sass';
 
-const SearhInput = () => (
+const SearchInput = () => (
     <>
     <div className="search-input">
         <input id="search" className="search-input__input" type="text" placeholder="Поиск |"/>
@@ -10,4 +10,4 @@ const SearhInput = () => (
     </>
 )
 
-export default SearhInput
+export default SearchInput

@@ -20,7 +20,7 @@ const Button = ({
 
     if(isActive && activeModificator) classes = classes + addBEMmodificator(baseClass, activeModificator);
 
-    const renderCounter = counter ? ` (${counter})` : null
+    const renderCounter = counter || counter === 0 ? ` (${counter})` : null
 
     return (
     <button

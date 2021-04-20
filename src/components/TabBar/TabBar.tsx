@@ -1,17 +1,16 @@
 import React from 'react';
 import './TabBar.sass';
 
-import {tabs} from '../../constants/tabs';
+import { TABS } from '../../constants/tabs';
 import Button from '../Button';
 
 const TabBar = () => {
 
-    const renderTabs = tabs.map( tab => (
+    const renderTabs = TABS.map( tab => (
         <li className="tab-bar__li" key={tab.label}>
             <Button modificators="--tab-header">
-            {tab.label}
+                {tab.label}
             </Button>
-            
         </li>
     ))
 

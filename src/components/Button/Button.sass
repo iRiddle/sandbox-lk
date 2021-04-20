@@ -1,10 +1,15 @@
 @import '../../sass/variables'
 
 .button
-    background: transparent
+    background-color: transparent
     border: none
     color: $text-color-main
     cursor: pointer
+    transition: background-color 0.2s
+    outline-offset: 0px
+    outline-color: $grey
+    &:active
+        background-color: $grey-2
     &--text-underlined--header
         padding: 0
         text-decoration: underline
@@ -33,6 +38,7 @@
             right: 0
             background-position: 100% 50%
             background-repeat: no-repeat
+            background-size: contain
         &--icon
             &-profile
                 &::after

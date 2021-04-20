@@ -1,6 +1,6 @@
 import { TabsArrayType } from '../interfaces'
 
-export const tabs : TabsArrayType = [
+export const TABS : TabsArrayType = [
     {
         label: 'акции',
         route: '/'

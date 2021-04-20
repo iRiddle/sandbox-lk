@@ -30,5 +30,5 @@ export interface IProfileStatusMenuProps {
 }
 
 export interface IMainLayoutProps {
-    children?: JSX.Element
+    children?: JSX.Element | JSX.Element[]
 }
