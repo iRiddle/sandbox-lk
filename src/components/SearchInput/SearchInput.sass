@@ -1,0 +1,32 @@
+@import '../../sass/variables'
+
+.search-input
+    position: relative
+    &__input
+        border: none
+        border-radius: 100px
+        box-shadow: $input-box-shadow
+        width: 73px
+        height: 26px
+        position: relative
+        padding: 0 15px 0 10px
+        font-family: Roboto
+        font-style: normal
+        font-weight: 300
+        font-size: 12px
+        line-height: 14px
+        color: $text-color-main
+        &::placeholder
+            color: $header-description-color
+            opacity: 0.2
+    &__label
+        position: absolute
+        transform: translateY(50%)
+        bottom: 50%
+        right: 7px
+        display: block
+        height: 15px
+        width: 15px
+        background-image: url('/img/icons/search.svg')
+        background-repeat: no-repeat
+        background-position: 100% 50%

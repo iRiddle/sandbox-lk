@@ -1,0 +1,42 @@
+@import '../../sass/variables'
+
+.header
+    font-family: Roboto
+    padding: 16px 0 36px
+    background-color: $header-background-color
+    position: relative
+    box-shadow: $header-box-shadow
+    &::before
+        content: ''
+        display: block
+        border-radius: 50%
+        position: absolute
+        width: 138.82px
+        height: 138.82px
+        left: 79.91px
+        top: -61px
+        background: $main-color
+        box-shadow: inset 100px 0px 50px #7739FC, inset 0px -30px 20px rgba(156, 91, 222, 0.7), inset 0px 50px 150px #ECD9FF
+        filter: blur(20px)
+
+.info-bar
+    display: flex
+    justify-content: space-between
+    width: 100%
+    &__wrapper
+        &--flex-end
+            display: flex
+            justify-content: flex-end
+            align-items: center
+        &--vertical-centered
+            margin-top: 16px
+
+.nav-bar
+    display: flex
+    justify-content: space-between
+    margin-top: 21px
+
+@media screen and (max-width: 1700px)
+    .header
+        &::before
+            display: none

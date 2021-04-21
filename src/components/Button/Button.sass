@@ -1,0 +1,139 @@
+@import '../../sass/variables'
+
+.button
+    background-color: transparent
+    border: none
+    color: $text-color-main
+    cursor: pointer
+    transition: background-color 0.2s
+    outline-offset: 0px
+    outline-color: $grey
+    &:active
+        background-color: $grey-2
+    &--text-underlined--header
+        padding: 0
+        text-decoration: underline
+        font-family: Roboto
+        font-style: normal
+        font-weight: 300
+        font-size: 12px
+        line-height: 14px
+        color: $header-description-color
+    &--text-icon-right--header
+        padding: 0
+        font-family: Roboto
+        font-style: normal
+        font-weight: 300
+        font-size: 12px
+        line-height: 14px
+        color: $header-description-color
+        padding-right: 20px
+        position: relative
+        &::after
+            content: ''
+            height: 15px
+            width: 100%
+            position: absolute
+            bottom: 0
+            right: 0
+            background-position: 100% 50%
+            background-repeat: no-repeat
+            background-size: contain
+        &--icon
+            &-profile
+                &::after
+                    background-image: url('/img/icons/profile-active.svg')
+            &-basket
+                &::after
+                    background-image: url('/img/icons/basket-active.svg')
+    &--tab-header
+        font-family: Ubuntu
+        font-style: normal
+        font-weight: 500
+        font-size: 14px
+        line-height: 16px
+        letter-spacing: -0.02em
+        text-transform: uppercase
+        color: $text-color-main
+    &--text
+        text-align: left
+        padding: 0
+        font-family: Roboto
+        font-style: normal
+        font-weight: 300
+        font-size: 12px
+        line-height: 14px
+        color: $text-color-main
+    &--text-icon-left
+        font-family: Ubuntu
+        font-style: normal
+        font-weight: 300
+        font-size: 16px
+        line-height: 39px
+        letter-spacing: -0.02em
+        color: $text-color-secondary
+        padding: 0 0 0 40px
+        width: 100%
+        text-align: left
+        position: relative
+        &:after
+            content: ''
+            height: 20px
+            width: 26px
+            position: absolute
+            bottom: 0
+            left: 5px
+            transform: translateY(-50%)
+            background-position: 0% 50%
+            background-repeat: no-repeat
+        &--icon
+            &-basket
+                &::after
+                    background-image: url('/img/icons/basket.svg')
+                &--active
+                    font-weight: 500
+                    color: $active-text-color
+                    &::after
+                        background-image: url('/img/icons/basket-active.svg')
+            &-bookmarks
+                &::after
+                    background-image: url('/img/icons/bookmarks.svg')
+                &--active
+                    font-weight: 500
+                    color: $active-text-color
+                    &::after
+                        background-image: url('/img/icons/bookmarks-active.svg')
+            &-documents
+                &::after
+                    background-image: url('/img/icons/documents.svg')
+                &--active
+                    font-weight: 500
+                    color: $active-text-color
+                    &::after
+                        background-image: url('/img/icons/documents-active.svg')
+            &-downloads
+                &::after
+                    background-image: url('/img/icons/downloads.svg')
+                &--active
+                    font-weight: 500
+                    color: $active-text-color
+                    &::after
+                        background-image: url('/img/icons/downloads-active.svg')
+            &-requests
+                &::after
+                    background-image: url('/img/icons/requests.svg')
+                &--active
+                    font-weight: 500
+                    color: $active-text-color
+                    &::after
+                        background-image: url('/img/icons/requests-active.svg')
+            &-settings
+                &::after
+                    background-image: url('/img/icons/profile.svg')
+                    background-position: 10% 50%
+                &--active
+                    font-weight: 500
+                    color: $active-text-color
+                    &::after
+                        background-image: url('/img/icons/profile-active.svg')
+                        background-position: 10% 50%
